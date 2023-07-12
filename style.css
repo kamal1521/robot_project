@@ -1,0 +1,239 @@
+
+h1{
+    background: linear-gradient(blue,white,red);
+    text-align:center ;
+    border-radius: 50%;
+}
+
+.container{
+    background:url("https://img.freepik.com/premium-photo/blue-lightning-with-dark-background-3d-rendering_772449-122.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 438px;
+    width: 701px;
+    border: 2px solid red;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.face{
+    height:100px ;
+    width: 150px;
+    background:linear-gradient(red,white,blue);
+    margin:auto;
+    margin-top: 20px;
+    border-top-left-radius: 200%;
+    border-top-right-radius: 200%;
+    transition: width is ease-in;
+    border-radius: 50%;
+}
+
+.container:hover .face{
+    animation: face 5s infinite;
+}
+@keyframes face
+{
+   0%{
+    transform: translateX(50px);
+   }
+   25%{
+    transform: translateX(-50px);
+   }
+   50%{
+    transform: translateX(50px);
+   }
+   75%{
+    transform: translateX(-50px);
+   }
+   100%{
+    transform: translateX(50px);
+   }
+}
+.eyes{
+     display: flex;
+     width: 150px;
+     justify-content: space-evenly;
+     margin: auto;
+     padding-top: 50px;
+}
+
+
+.leye{
+    height: 35px;
+    width: 35px;
+    background:linear-gradient(blue,white);
+    border-radius: 50%;
+}
+
+.reye{
+    height: 35px;
+    width: 35px;
+    background: linear-gradient(blue,white);
+    border-radius: 50%;
+}
+
+.larm{
+    height: 85px;
+    width: 20px;
+    background:linear-gradient(red,white,blue);
+    border-radius: 30%;
+    margin-top: 30px;
+}
+
+.container:hover .larm{
+    animation: larm 4s infinite;
+}
+@keyframes larm{
+    0%{
+        transform: rotate(45deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg); 
+        transform-origin: top center; 
+    }
+    50%{
+        transform: rotate(45deg);
+        transform-origin: top center;   
+    }
+    75%{
+        transform: rotate(0deg);  
+        transform-origin: top center; 
+    }
+    100%{
+        transform: rotate(45deg);
+        transform-origin: top center;
+    }   
+}
+.body{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.rarm{
+    height: 85px;
+    width: 20px;
+    background:linear-gradient(red,white,blue);
+    border-radius: 30%;
+    margin-top: 30px;
+}
+.container:hover .rarm{
+    animation: rarm 4s infinite;
+}
+@keyframes rarm{
+    0%{
+        transform: rotate(-45deg); 
+        transform-origin: top center;
+    }  
+    25%{
+        transform: rotate(0deg); 
+        transform-origin: top center; 
+    }
+    50%{
+        transform: rotate(-45deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);  
+        transform-origin: top center; 
+    }
+    100%{
+        transform: rotate(-45deg); 
+        transform-origin: top center; 
+    }
+}
+
+.center{
+     height: 100px;
+     width: 150px;
+     background:linear-gradient(blue,white,red,white);
+     border-bottom-left-radius: 30%;
+     border-bottom-right-radius: 30%;
+}
+
+.container:hover .center{
+    animation: center 5s infinite;
+}
+@keyframes center{
+    from{
+        transform: rotate(0deg);
+        border-radius: 100%;
+    }
+    to{
+        transform: rotate(360deg);
+        border-radius: 100%;
+    }
+}
+.legs{
+     display: flex;
+     width: 150px;
+     justify-content: space-evenly;
+     margin: auto;
+     margin-top: 0px;
+}
+.lleg{
+    height: 83px;
+    width: 23px;
+    background: linear-gradient(blue,white,red);
+    border-radius: 30%;
+}
+
+.container:hover .lleg{
+    animation: lleg 4s infinite;
+}
+@keyframes lleg{
+0%{
+    transform: rotate(45deg);
+    transform-origin: top center;
+}
+25%{
+    transform: rotate(0deg);
+    transform-origin: top center;
+}
+50%{
+    transform: rotate(45deg);
+    transform-origin: top center;
+}
+75%{
+    transform: rotate(0deg);
+    transform-origin: top center;
+}
+100%{
+    transform: rotate(45deg);
+    transform-origin: top center;
+}
+}
+.rleg{
+    height: 83px;
+    width: 23px;
+    background: linear-gradient(blue,white,red);
+    border-radius: 30%;
+}
+.container:hover .rleg{
+    animation: rleg 4s infinite;
+}
+@keyframes rleg{
+    0%{
+        transform: rotate(-45deg);
+        transform-origin: top center;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-45deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(-45deg);
+        transform-origin: top center;
+    }
+}
